@@ -1,0 +1,109 @@
+.contain_items {
+    overflow-y: scroll;
+    height: 100vh;
+    padding-bottom: 120px;
+    &:hover {
+        &::-webkit-scrollbar-thumb {
+            visibility: visible;
+            background-color: #a1a1a1;
+        }
+    }
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+        display: none;
+    }
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+        visibility: hidden;
+    }
+}
+
+.boxmudic {
+    display: flex;
+    > a {
+        display: flex;
+    }
+}
+.search {
+    width: 100%;
+    padding: 98px 20px 0;
+    overflow: hidden;
+    // &:hover {
+    //     &::-webkit-scrollbar-thumb {
+    //         visibility: visible;
+    //         background-color: #a1a1a1;
+    //     }
+    // }
+    // &::-webkit-scrollbar {
+    //     width: 10px;
+    // }
+    // /* Track */
+    // &::-webkit-scrollbar-track {
+    //     display: none;
+    // }
+    // /* Handle */
+    // &::-webkit-scrollbar-thumb {
+    //     visibility: hidden;
+    // }
+}
+.title {
+    margin: 20px 0 10px 0;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.content_genres {
+    display: flex;
+    flex-wrap: wrap;
+}
+.genres {
+    position: relative;
+    width: 200px;
+    border-radius: 10px;
+    height: 200px;
+    margin: 10px;
+    text-transform: capitalize;
+    padding: 20px 0 0 15px;
+    overflow: hidden;
+    > h2 {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.images {
+    position: absolute;
+    transform: rotate(45deg) translateX(160px);
+    inset: 0;
+    width: 100px;
+    height: 100px;
+    z-index: 1;
+    > img {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .boxmudic {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .boxmudic {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+// @media screen and (min-width: 1150px) and (max-width: 1268px) {
+// }
+
+// @media screen and (max-width: 1150px) {
+//     .boxmudic {
+//         display: grid;
+//         grid-template-columns: 1fr 1fr 1fr;
+//     }
+// }
