@@ -8,6 +8,7 @@ import { useDispatch } from 'react-redux';
 import { setData } from '~/redux/actions';
 import { NumberContext, Setsize } from '~/App';
 import Tippy from '@tippyjs/react';
+import Error from '~/layout/Error';
 import { DataIdSong } from '~/components/Context/DataIdSong';
 import { PlayAndPause } from '~/components/Context/PlayAndPause';
 import { Toggle } from '~/components/Context/Toggle';
